@@ -21,8 +21,8 @@ We offer the following 2 possibilities for data preparation for both the bubble 
 ## Usage
 - Download all the data using the script provided in the Downloader directory. Untar all the files
 - Point the appropriate python script (on of the four below) to this untarred location.
-- For Preparing the Bubble Dataset with first N (N <= 200) time steps. ```python3 datasetGenBubble.py N```
-- For Preparing the Bubble Dataset with first N (N <= 200) time steps. ```python3 datasetGenBubblePad.py N```
-- For Preparing the Droplet Dataset with first N (N <= 200) time steps. ```python3 datasetGenDrop.py N```
-- For Preparing the Bubble Dataset with first N (N <= 200) time steps. ```python3 datasetGenDropPad.py N```
+- For Preparing the Bubble Dataset with time steps t1...tN (N <= 200) time steps. ```python3 datasetGenBubble.py t1 t2```
+- For Preparing the Bubble Dataset with time steps t1...tN (N <= 200) time steps. ```python3 datasetGenBubblePad.py t1 t2```
+- For Preparing the Droplet Dataset with time steps t1...tN (N <= 200) time steps. ```python3 datasetGenDrop.py t1 t2```
+- For Preparing the Bubble Dataset with time steps t1...tN (N <= 200) time steps. ```python3 datasetGenDropPad.py t1 t2```
 
