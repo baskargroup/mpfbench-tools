@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script is designed to process and prepare a dataset from downloaded files. It includes functionality for extracting, cleaning, and organizing data into a format suitable for machine learning or other types of analysis. The script ensures that the data is properly formatted and ready for use in training or evaluation tasks.
+
 
 ## Features
 
@@ -14,12 +14,8 @@ This script is designed to process and prepare a dataset from downloaded files. 
 
 ## Requirements
 
-- Python 3.x
-- Required libraries specified in `requirements.txt`
+- Python 3.9+
+- Required library : numpy
 
-## Installation
-
-To install the required libraries, run:
-
-```sh
-pip install -r requirements.txt
+## Usage
+- For Preparing the Bubble Dataset with first N (N <= 200) time steps. ```python3 datasetGenBubble.py N```
