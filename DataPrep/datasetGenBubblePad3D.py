@@ -7,15 +7,17 @@ import argparse
 import glob
 import sys
 
-def pad_array_to_center(original_array, pad_height, pad_width):
+def pad_array_to_center(original_array, pad_height, pad_width, pad_depth):
     # Calculate padding values for height and width
     pad_top = (pad_height - original_array.shape[2]) // 2
     pad_bottom = pad_height - original_array.shape[2] - pad_top
     pad_left = (pad_width - original_array.shape[3]) // 2
     pad_right = pad_width - original_array.shape[3] - pad_left
+    pad_front = (pad_depth - original_array.shape[4]) // 2
+    pad_back = pad_depth - original_array.shape[4] - pad_front
     
     # Pad the array
-    padded_array = np.pad(original_array, ((0, 0), (0, 0), (pad_top, pad_bottom), (pad_left, pad_right)), mode='constant')
+    padded_array = np.pad(original_array, ((0, 0), (0, 0), (pad_top, pad_bottom), (pad_left, pad_right), (pad_front, pad_back)), mode='constant')
     return padded_array
 
 
@@ -84,11 +86,12 @@ for group_folder in group_folders:
             tmp = data[time_start:time_end, :, :, :, :]
             
             # Desired dimensions
-            pad_height = 512
-            pad_width = 512
+            pad_height = 256
+            pad_width = 256
+            pad_depth = 256
     
             # # Pad the array
-            tmp = pad_array_to_center(tmp, pad_height, pad_width)
+            tmp = pad_array_to_center(tmp, pad_height, pad_width, pad_depth)
             
             
             # Append the data to Y

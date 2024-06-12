@@ -7,18 +7,6 @@ import argparse
 import glob
 import sys
 
-def pad_array_to_center(original_array, pad_height, pad_width):
-    # Calculate padding values for height and width
-    pad_top = (pad_height - original_array.shape[2]) // 2
-    pad_bottom = pad_height - original_array.shape[2] - pad_top
-    pad_left = (pad_width - original_array.shape[3]) // 2
-    pad_right = pad_width - original_array.shape[3] - pad_left
-    
-    # Pad the array
-    padded_array = np.pad(original_array, ((0, 0), (0, 0), (pad_top, pad_bottom), (pad_left, pad_right)), mode='constant')
-    return padded_array
-
-
 # Configure logging
 #log_filename = f'/work/mech-ai-scratch/mehdish/projects/Flowbench/GPUruns/Processed/dataset/bubble_processed_filenames.log'
 log_filename = ''
