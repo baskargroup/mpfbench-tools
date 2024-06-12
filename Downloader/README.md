@@ -16,5 +16,5 @@ This script is designed to automate the process of downloading a dataset from ou
 
 ## Usage
 - Move to a directory on your local machine/server where you intend to download a dataset.
-- Run ```bash downloader.sh```
+- Run ```bash mpf-download.sh```
 - Choose the appropriate interactive options.
