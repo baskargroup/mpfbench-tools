@@ -1,20 +1,21 @@
-# Dataset Downloader Script
+# ML Training
 
 ## Overview
 
-This script is designed to automate the process of downloading a dataset from our datastores. It ensures that the dataset is downloaded to a designated directory with an appropriate name. Please note that the files are very large. Ensure you have sufficient space before initiating a download. In addition, check for any instructions specified in our datastores as .txt files.
+This directory provides a comprehensive list of ML training scripts that can be used to train FNO and CNO models on our data. The idea is to train a Seq. to Seq models. e.g., we take inputs for N number of time steps of the simulation and output the next time step of the simulation. We have trained a total of 8 models. This repository contains the full code for all these experiments. 
 
 ## Features
 
-- Downloads dataset from our datastores
-- Easy to use interactive options to pick the correct dataset
-- Data is downloaded with an instructive name
+- End to end code. Outputs various MSE statistics on a validation dataset.
+- Four models each for CNO and FNO
+	- 8 to 1 for Bubble - Take first 8 time steps of the simulation and predict the 9th time step
+	- 8 to 1 for Drop - Take first 8 time steps of the simulation and predict the 9th time step
+	- 4 to 1 for Bubble - Take first 4 time steps of the simulation and predict the 5th time step
+	- 4 to 1 for Drop - Take first 4 time steps of the simulation and predict the 5th time step
 
 ## Requirements
 
-- wget utility installed on your machine/server.
+- ```pip install requirements.txt```
 
 ## Usage
-- Move to a directory on your local machine/server where you intend to download a dataset.
-- Run ```bash mpf-download.sh```
-- Choose the appropriate interactive options.
+- 
