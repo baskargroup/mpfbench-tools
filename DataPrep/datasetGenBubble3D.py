@@ -81,16 +81,8 @@ for group_folder in group_folders:
             # Load the data from the NPZ file
             data = np.load(os.path.join(group_folder, filename))['data']
             
-            tmp = data[time_start:time_end, :, :, :]
-            
-                # Desired dimensions
-            # pad_height = 512
-            # pad_width = 512
-    
-            # # Pad the array
-            # tmp = pad_array_to_center(tmp, pad_height, pad_width)
-            
-            
+            tmp = data[time_start:time_end, :, :, :, :]
+                
             # Append the data to Y
             Y.append(tmp)
 
@@ -110,3 +102,4 @@ os.makedirs(output_directory, exist_ok=True)
 
 np.savez_compressed(os.path.join(output_directory, 'Y_bubble.npz.npz'), Y=Y)
 np.savez_compressed(os.path.join(output_directory, 'X_bubble.npz.npz'), X=X)
+

@@ -81,7 +81,7 @@ for group_folder in group_folders:
             # Load the data from the NPZ file
             data = np.load(os.path.join(group_folder, filename))['data']
             
-            tmp = data[time_start:time_end, :, :, :]
+            tmp = data[time_start:time_end, :, :, :, :]
             
             # Desired dimensions
             pad_height = 512
