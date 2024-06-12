@@ -22,8 +22,8 @@ We offer the following 2 possibilities for data preparation for both the bubble 
 - Download all the data using the script provided in the Downloader directory. Untar all the files
 - In the script indicate the base\_directory (where the untarred files are located) and the output\_directory where you desire the ML tensors to be dumped.
 - Specify log\_filename in the script
-- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenBubble.py t1 t2```
-- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenBubblePad.py t1 t2```
-- For Preparing the Droplet Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenDrop.py t1 t2```
-- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenDropPad.py t1 t2```
+- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenBubble2D.py t1 t2```
+- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenBubblePad2D.py t1 t2```
+- For Preparing the Droplet Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenDrop2D.py t1 t2```
+- For Preparing the Bubble Dataset with time steps t1...t2 (N <= 200) time steps. ```python3 datasetGenDropPad2D.py t1 t2```
 
