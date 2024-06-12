@@ -2,9 +2,10 @@
 
 ## Overview
 We offer the following 2 possibilities for data preparation for both the bubble and droplet datasets
-- Without Padding - In this case the output tensor will take the form : Y[1000][t1..t2][u,v,c][256][512]
-- With Padding - In this case the output tensor will take the form : Y[1000][t1..t2][u,v,c][512][512]
+- Without Padding - In this case the output tensor will take the form : ```Y[1000][t1..t2][u,v,c][256][512]```
+- With Padding - In this case the output tensor will take the form : ```Y[1000][t1..t2][u,v,c][512][512]```
 - Here, t1 => starting time step desired, t2 => ending time step desired, u,v => velocity fields, c => concentration
+- We provide a tensor containing all the relevant dimensionless numbers i.e., density ratio, viscosity ratio, Bond number and  Reynolds number for the simulation. This tensor looks as follows ```X[1000][rho,mu,Bo,Re][256][512]``` or ```X[1000][rho,mu,Bo,Re][512][512]``` depending on whether a dataset is requested with padding or without padding.
 
 
 ## Features
