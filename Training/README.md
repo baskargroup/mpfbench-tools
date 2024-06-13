@@ -18,7 +18,7 @@ This directory provides a comprehensive list of ML training scripts that can be 
 - ```pip install requirements.txt```
 
 ## Usage
-- Use data_prep.py
+- Run ```data_prep.py```
 - Under ```experiments``` directory, we have a model specific directory. Within this second directry we have a config file called ```config.yaml```
 - Adjust the following settings as required, if using CNO:
 
