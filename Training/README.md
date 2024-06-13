@@ -39,11 +39,11 @@ This directory provides a comprehensive list of ML training scripts that can be 
 - Adjust the the following settings as required, if using FNO:
 
 	- model: "fno"
-        - file_path_x: ''
-        - file_path_y: ''
-        - batch_size: 5
-        - split_fraction: 0.8
-        - n_modes:
+	- file_path_x: ''
+	- file_path_y: ''
+	- batch_size: 5
+	- split_fraction: 0.8
+	- n_modes:
   		- 32
   		- 32
 	- n_layers: 5
