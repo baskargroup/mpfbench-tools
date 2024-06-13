@@ -20,7 +20,7 @@ This directory provides a comprehensive list of ML training scripts that can be 
 ## Usage
 - Use data_prep.py
 - Under ```experiments``` directory, we have a model specific directory. Within this second directry we have a config file called ```config.yaml```
-- Enter the following settings
+- Adjust the following settings as required:
 
 	- model: "cno"
 	- file_path_x: ''
@@ -39,6 +39,3 @@ This directory provides a comprehensive list of ML training scripts that can be 
 - Run the script ```script.sh``` on a HPC server
 - Training Results will be stored in a ```.out``` file.
 - To output validation metrics per field, run ```out_of_sample.py``` 
-
-
- 
