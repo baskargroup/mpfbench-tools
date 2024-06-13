@@ -18,4 +18,27 @@ This directory provides a comprehensive list of ML training scripts that can be 
 - ```pip install requirements.txt```
 
 ## Usage
-- 
+- Use data_prep.py
+- Under ```experiments``` directory, we have a model specific directory. Within this second directry we have a config file called ```config.yaml```
+- Enter the following settings
+
+	- model: "cno"
+	- file_path_x: ''
+	- file_path_y: ''
+	- batch_size: 5
+	- split_fraction: 0.8
+	- in_dim: 20
+	- out_dim: 5
+	- N_layers: 4
+	- in_size: 512
+	- out_size: 512
+	- learning_rate: 0.001
+	- num_epochs: 200
+	- checkpoint_frequency: 50
+
+- Run the script ```script.sh``` on a HPC server
+- Training Results will be stored in a ```.out``` file.
+- To output validation metrics per field, run ```out_of_sample.py``` 
+
+
+ 
