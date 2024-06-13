@@ -17,7 +17,7 @@ We provide workflows for training three known and widely used neural operators: 
 
 ## Data
 
-MPF-Bench offers over 11,000 solutions for two-phase bubble rise and droplet flow dynamics in both 2D and 3D. Simulation include a wide range of flow scenarios including two orders of magnitude of surface tension and density/viscosity ratio. Our solutions are available as a time sequences for both 2D and 3D. This dataset is specifically designed to support the development of next-generation scientific machine learning (SciML) neural PDE solvers, particularly those tackling complex multiphase flows.
+MPF-Bench offers over 11,000 solutions for two-phase bubble rise and droplet flow dynamics in both 2D and 3D. Simulation include a wide range of flow scenarios including two orders of magnitude of surface tension and density/viscosity ratio. Our solutions are available as a time sequences for both 2D and 3D. This [dataset](https://figshare.com/s/bbb0c2463e8c8a24814a) is specifically designed to support the development of next-generation scientific machine learning (SciML) neural PDE solvers, particularly those tackling complex multiphase flows.
 
 
 <h2 id="paper">Website</h2>
