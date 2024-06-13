@@ -13,7 +13,7 @@ MPF-Bench is an extensive dataset which contains over 11,000 two-phase bubble ri
 
 ## Model
 
-We provide workflows for training three known and widely used neural operators: Fourier Neural Operators (FNO), Convolutional Neural Operators (CNO), and Deep Operator Networks (DeepONets). The full implementations of these three networks are included and explained here.
+We provide workflows for training three known and widely used neural operators: Fourier Neural Operators (FNO) and Convolutional Neural Operators (CNO). The full implementations of these three networks are included and explained here.
 
 ## Data
 
