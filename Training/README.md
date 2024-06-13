@@ -19,8 +19,8 @@ This directory provides a comprehensive list of ML training scripts that can be 
 
 ## Usage
 - Run ```data_prep.py```
-- Under ```experiments``` directory, we have a model specific directory. Within this second directry we have a config file called ```config.yaml```
-- Adjust the following settings as required, if using CNO:
+- Under ```experiments``` directory, create a model specific directory e.g., ```cno_1``` or ```fno_1```. Within this second directory create a config file called ```config.yaml```. Follow the example we have provided in this repo.
+- Adjust the following settings as required in the config file, if using CNO:
 
 	- model: "cno"
 	- file_path_x: ''
@@ -36,7 +36,7 @@ This directory provides a comprehensive list of ML training scripts that can be 
 	- num_epochs: 200
 	- checkpoint_frequency: 50
 
-- Adjust the the following settings as required, if using FNO:
+- Adjust the the following settings as required in the config file, if using FNO:
 
 	- model: "fno"
 	- file_path_x: ''
